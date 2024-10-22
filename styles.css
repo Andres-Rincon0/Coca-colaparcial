@@ -1,0 +1,398 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-padding-top: 2rem ;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.root{
+    --main-color: red;
+    --second-color: black;
+
+}
+
+section{
+    padding: 50px 10%;
+}
+
+*::selection{
+   color:rgb(255, 0, 0);
+   background: rgb(255, 255, 255);
+}
+img{
+    width: 100%;
+}
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #ffffff;
+    box-shadow: 0 4px 41px rgb(14, 29, 19);
+    padding: 15px 10%;
+    transition: 0.2s;
+}
+.logo img{
+    width: 40px;
+}
+
+.navbar{
+    display: flex;   
+}
+
+.navbar a{
+    font-size:  1rem;
+    padding: 11px 20px;
+    color: var(--second-color);
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.navbar a:hover{
+    color: red;
+}
+#menu-icon{
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1001;
+    display: none;
+}
+.home{
+    width: 100%;
+    min-height: 80vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-image: url(/img/empresaCocacola.png);
+    gap: 1rem;
+}
+.home-text{
+    flex: 1 1 17rem;
+    height: 9rem;
+}
+.home-img{
+    flex: 1 1 17rem;
+}
+.home-img img{
+    animation: animate 3s linear infinite;
+    border-radius: 10rem 0rem 0rem 10rem;
+}
+@keyframes animate{
+    0%{
+        transform: translate(-11px 0);
+    }
+    50%{
+        transform: translate(-0px -11px);
+    }
+    100%{
+        transform: translate(-11px 0);
+    }
+}
+
+.home-text span{
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+}
+.home-text h1{
+    font-size: 3.2rem;
+    color: white;
+}
+.home-text h2{
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: black;
+    text-transform: capitalize;
+    margin: 0.5rem 0 1.4rem;
+}
+
+.btn{
+    padding: 7px 16px;
+    border: solid black;
+    border-radius: 0rem 0rem 10rem 10rem;
+    color: whitesmoke;
+    font-weight: 500;
+}
+.btn:hover{
+    color: black;
+    background: white;
+}
+.heading{
+    text-align: center;
+    text-transform: uppercase;
+}
+.heading span{
+    font-size: 1rem;
+    font-weight: 600;
+    color: red;
+}
+.heading h1{
+    font-size: 2rem;
+    color: black;
+}
+.shop-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 5rem;
+}
+.shop-container .box{
+    flex: 1 1 10rem;
+    background: red;
+    padding: 20px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+    border-radius: 0.5rem;
+}
+.shop-container .box .box-img{
+    width: 150px;
+    height: 150px;
+    margin-top: -100px;
+}
+.shop-container .box .box-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+.shop-container .box h2{
+    color: black;
+    font-size: 1.2rem;
+}
+.shop-container .box span{
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin: 0.2rem 0 0.5rem;
+}
+.box .btn{
+    border:2px solid black;
+    color: white;
+}
+.box .btn:hover{
+    background: white;
+    color: red;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+.historia-img{
+    flex: 1 1 21rem;
+}
+.historia-text{
+    flex: 1 1 21rem;
+}
+.historia-text h2{
+    font-size: 1.2rem;
+    color: red;
+}
+.historia-text p{
+    margin: 0.5rem 0 1rem;
+    text-align: justify;
+}
+
+.vision{
+    background: black;
+    color: white;
+    flex: 1 1 21rem;
+}
+.vision h1{
+    color: rgb(255, 0, 0);
+    font-size: 4rem;
+}
+.vision p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0.5rem 0 1rem;
+    text-align: justify;
+}
+.mision{
+    background: black;
+    color: whitesmoke;
+    flex: 1 1 21rem;
+}
+.mision h1{
+    color: rgb(255, 0, 0);
+    font-size: 4rem;
+}
+.mision p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0.5rem 0 1rem;
+    text-align: justify;
+}
+.equipoTrabajo{
+    margin-top: 6rem;
+}
+.equipoTrabajo h1{
+    color: red;
+    font-size: 3rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+.equipoTrabajo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: solid 10px;
+    border-radius: 5rem;
+    box-shadow:  1rem -2rem 13rem -3rem;
+}
+.equipoTrabajo h3{
+    margin-top: 5rem;
+}
+.equipoTrabajo p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0.5rem 0 1rem;
+    text-align: justify;
+}
+.aliados{
+    background: black;
+    color: white;
+    flex: 1 1 21rem;
+}
+.aliados h1{
+        color: rgb(255, 0, 0);
+        font-size: 4rem;
+    
+}
+.aliados h3{
+    color: rgb(255, 0, 0);
+    font-size: 2rem;
+
+}
+.aliados p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0.5rem 0 1rem;
+    text-align: justify;
+}
+.aliados .box-aliados img{
+    width: 15rem;
+    height: 15rem;
+    margin: 0px 0px 0px 220px;
+    border: solid red;
+    border-radius: 0rem 10rem ;
+    flex: 1 1 21rem;
+}
+.aliados h4{
+    color: rgb(255, 0, 0);
+    font-size: 18px;
+}
+.alidos strong{
+    color: red;
+}
+.Servicios{
+    background: rgb(255, 255, 255);
+    color: rgb(255, 0, 0);
+    flex: 1 1 21rem;
+}
+.Servicios h1{
+        color: rgb(0, 0, 0);
+        font-size: 4rem;
+    
+}
+.aliados h3{
+    color: rgb(255, 0, 0);
+    font-size: 2rem;
+
+}
+.Servicios p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0.5rem 0 1rem;
+    text-align: justify;
+    color: black;
+}
+.Servicios .box-servicios img{
+    width: 25rem;
+    height: 25rem;
+    margin: 0px 0px 0px 20px;
+    border: solid red;
+    border-radius: 5rem;
+    flex: 1 1 21rem;
+}
+.Servicios h4{
+    color: rgb(255, 0, 0);
+    font-size: 18px;
+}
+.contactos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.social a{
+    font-size: 29px;
+    margin: 0.5rem;
+}
+.social a .bx{
+    padding: 5px;
+    color: rgb(255, 255, 255);
+    background: rgb(0, 0, 0);
+    border-radius: 50%;
+}
+.social a .bx:hover{
+    background: rgb(161, 23, 23);
+}
+@media(max-width:1150px){
+    header{
+        padding: 18px 7%;
+    }
+    section{
+        padding: 50px 7%;
+    }
+    .home-text h1{
+        font-size: 3rem;
+    }
+    .home-text h2{
+        font-size: 1.5rem;
+    }
+}
+@media(max-width:991px){
+    header{
+        padding: 18px 4%;
+    }
+    section{
+        padding: 50px 4%;
+    }
+}
+@media(max-width:768px){
+    header{
+        padding: 11px 4%;
+    }
+    #menu-icon{
+      display: initial;  
+    }
+    header .navbar{
+        position: absolute;
+        top: -500%;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        background: #fff;
+        box-shadow: 0 4px 4px rbg(14 55 54/ 14%) ;
+        border-top: 2px solid var(--main-color);
+        transition: 0.2s;
+        text-align: left;
+    }
+    .navbar.active{
+        top:100%
+    }
+    .navbar a{
+        padding: 1.5rem;
+        display: block;
+        color: var(--second-color);
+    }
+    .home-text span{
+        font-size: 0.9rem;
+    }
+}
+
